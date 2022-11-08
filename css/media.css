@@ -26,7 +26,8 @@
     margin: 2rem auto 0;
   }
 
-  section {
+  section,
+  footer {
     padding: 4rem 0 1rem;
   }
 
@@ -140,6 +141,25 @@
   .contact .input-info .form {
     padding: 1rem 0;
   }
+
+  /* ===== Footer Style ===== */
+  .footer .footer-contents {
+    flex-wrap: wrap;
+    row-gap: 2rem;
+  }
+
+  .footer .footer-item {
+    /* !important: css에서 정의하는 값으로 가장 최우선 적용됨. 사용은 최소화함 */
+    width: 50% !important;
+  }
+
+  .footer .footer-item:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .footer .copy {
+    padding: 4rem 0 2rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -160,6 +180,21 @@
 
   .products .item-image imag {
     transform: translateX(0);
+  }
+
+  /* ===== Footer Style ===== */
+  .footer .footer-contents {
+    flex-wrap: wrap;
+    row-gap: 2rem;
+  }
+
+  .footer .footer-item {
+    /* !important: css에서 정의하는 값으로 가장 최우선 적용됨. 사용은 최소화함 */
+    width: 100% !important;
+  }
+
+  .footer .footer-item:not(:first-child) {
+    padding-left: 0;
   }
 }
 
